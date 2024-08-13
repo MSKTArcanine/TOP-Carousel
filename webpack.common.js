@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "TEMPLATE",
+      title: "TOP Carousel",
       template: "./src/index.html",
       inject: "head",
       scriptLoading: "defer",
@@ -25,6 +25,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg)$/i,
+        type: "asset/resource",
       },
     ],
   },

@@ -1,0 +1,72 @@
+:root {
+  font-size: 16;
+}
+* {
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+html {
+  box-sizing: inherit;
+}
+body {
+  padding: 4rem;
+  margin: 0;
+}
+.pictureFrame {
+  position: relative;
+  width: calc(500px + 20vmax);
+  padding: 4rem 10vmax 8rem 10vmax;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.veryWideDiv {
+  height: 500px;
+  width: 500px;
+}
+.slide:not(.visible) {
+  display: none;
+}
+.navBar {
+  padding: 1rem;
+  width: 500px;
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circleNav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 250px;
+  border: none;
+}
+.circleButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleButton:is(.full) .circleValidation {
+  background-color: black;
+}
+.circleValidation {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.arrowButton {
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+}
+.arrowButton img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
