@@ -1,6 +1,4 @@
 import "./style.css";
-import addChevron from "./addChevron";
-import slidesImg from "./slidesImg";
+import onLoadDefault from "./onLoadDefault";
 
-addChevron();
-slidesImg();
+onLoadDefault();
